@@ -1,0 +1,20 @@
+{
+  "name": "mydefine",
+  "version": "1.0.0",
+  "description": "个人js库",
+  "main": "index.module.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifmake/mydefine.git"
+  },
+  "author": "renzhiliang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifmake/mydefine/issues"
+  },
+  "homepage": "https://github.com/ifmake/mydefine#readme"
+}

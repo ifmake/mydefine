@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自定义模块</title>
+</head>
+<body>
+    <h2>自定义js库</h2>
+    <script type="module" src="./index.module.js"></script>
+</body>
+<script>
+
+// function parent(name) {
+//     this.name = name;
+//  }
+//  parent.prototype.callname = function() {
+//      console.log('父亲的名字', this.name)
+//  }
+
+//  function Child(name, fatherName) {
+//     parent.call(this, fatherName);
+//     this.name = name;
+//  }
+
+//  function Extends (proto) {
+//      function Sky(){};
+//      Sky.prototype = proto;
+//      return new Sky();
+//  }
+//  Child.prototype = Extends(parent.prototype);
+//  Child.prototype.callName = function() {
+//      console.log('孩子的名字', this);
+//  }
+//  Child.prototype.constructor = Child;
+//  const Parent = new parent('father');
+//  const Children = new Child('小明', 'dad')
+//  Children.callName()
+</script>
+</html>
