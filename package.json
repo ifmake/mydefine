@@ -5,7 +5,8 @@
   "main": "index.module.js",
   "scripts": {
     "test": "npm run test",
-    "start": "npm run start"
+    "start": "npm run start",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/ifmake/mydefine/issues"
   },
-  "homepage": "https://github.com/ifmake/mydefine#readme"
+  "homepage": "https://github.com/ifmake/mydefine#readme",
+  "keywords": [
+    "模块练习"
+  ],
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.31.0",
+    "webpack-cdn-plugin": "^3.1.1",
+    "webpack-cli": "^3.3.2"
+  }
 }

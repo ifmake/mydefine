@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>自定义模块</title>
+</head>
+<body>
+    <h2>自定义js库</h2>
+<script type="text/javascript" src="main.buddle.js"></script></body>
+<script>
+    // 常规阶乘递归
+    function testFact(n) {
+        if(n === 1) return 1;
+        return n * testFact(n-1);
+    }
+    console.time('常规阶乘')
+    testFact(5);
+    console.timeEnd('常规阶乘')
+
+    // 阶乘优化
+    function niceFact(n, total) {
+        if(n === 1) return total;
+        return niceFact(n-1,n*total);
+    }
+    console.time('优化阶乘')
+    testFact(5);
+    console.timeEnd('优化阶乘')
+</script>
+</html>

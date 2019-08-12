@@ -8,6 +8,9 @@
  */
 const CallRzl = (function(){
     Function.prototype.callRzl = function (protoRzl = window) {
+        if(typeof this  !== 'function'){
+            return '不是一个函数'
+        }
         protoRzl.fn = this;
         let args = [...arguments].slice(1);
         let result = protoRzl.fn(...args);
@@ -22,6 +25,9 @@ const CallRzl = (function(){
  */
 const ApplayRzl = (function(){
     Function.prototype.applyRzl = function(protoRzl = window) {
+        if(typeof this  !== 'function'){
+            return '不是一个函数'
+        }
         protoRzl.fn = this;
         let result; 
         if(arguments[1]){
@@ -55,6 +61,7 @@ const BindRzl = function(){
         return resFn;
     }
 }
+
 
 
 export {

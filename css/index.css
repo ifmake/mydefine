@@ -1,0 +1,22 @@
+* {
+    margin:0;
+    padding: 0;
+}
+h1{
+    color: red;
+}
+
+/* css3 多栏布局*/
+.sum_line_layout{
+    width: 700px;
+    height: 300px;
+    border: 1px solid #ccc;
+    /*分栏数*/
+    column-count: 5;
+    /*分栏间隔线*/
+    /* column-rule:1px solid #ccc; */
+    /*多栏之间的间隔*/
+    column-gap: 20px;
+    /*每个栏的宽度*/
+    column-width: 180px;
+}

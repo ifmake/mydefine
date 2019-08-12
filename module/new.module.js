@@ -19,4 +19,8 @@ function newRzl(fun) {
     return res;
 }
 
-export default newRzl;
+
+
+export {
+  newRzl
+} 

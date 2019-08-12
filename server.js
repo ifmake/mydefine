@@ -23,3 +23,21 @@ const server = http.createServer((req, res) => {
     })
 }).listen(8081)
 console.log('启动服务成功')
+setTimeout(() => {
+    console.log('time1')
+    new Promise(reslove => reslove('11111')).then(res => {
+        console.log('promise1')  
+    })
+    setTimeout(() => {
+        console.log('time1_1') 
+    })
+})
+setTimeout(() => {
+    console.log('time2')
+    new Promise(reslove => reslove('11111')).then(res => {
+        console.log('promise2')  
+    })
+    setTimeout(() => {
+        console.log('time2_1') 
+    })
+})

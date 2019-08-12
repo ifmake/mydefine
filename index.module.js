@@ -1,17 +1,20 @@
 
-import newRzl from './module/new.module.js';
+import {newRzl} from './module/new.module.js';
 import {jsonstringifyRzl,JsonParseEvalRzl,JsonParseFunctionRzl} from './module/JSON.module.js'
 import {CallRzl,ApplayRzl,BindRzl} from './module/call-apply-bind.module.js'
 import {curry,es6Curry} from './module/currying.modul.js'
+import {PromiseRzl} from './module/promise.module.js'
+import  {bubbleSort,selectSort} from './module/sort.module.js'
+
 
 // new 操作符实现
-function newA(name, age) {
-    this.name = name;
-    this.age = age;
-    console.log(this.name, this.age)
-}
-newRzl(newA, '任志量', '123')
-new newA('任志量', '12222');
+// function newA(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     console.log(this.name, this.age)
+// }
+// newRzl(newA, '任志量', '123')
+// new newA('任志量', '12222');
 
 // JSON.stringify 实现
 // console.log(
@@ -43,13 +46,31 @@ new newA('任志量', '12222');
 
 // 函数柯里化
 
-function test (a, b, c) {
-    return a + b + c;
-}
-const curringTag = curry(test)
-console.log(curringTag(2)(46, 3));
-const es6CurryTag = es6Curry((a,b,c) => a+b+c);
-console.log(es6CurryTag(1,2)(2))
+// function test (a, b, c) {
+//     return a + b + c;
+// }
+// const curringTag = curry(test)
+// console.log(curringTag(2)(46, 3));
+// const es6CurryTag = es6Curry((a,b,c) => a+b+c);
+// console.log(es6CurryTag(1,2)(2))
+
+// 手写promise
+// const promise = new PromiseRzl(function(resolve, reject){
+//     resolve(1);
+// })
+// console.log('promise',promise)
+// promise.then(function (result) {
+//     console.log(result)
+// })  
+
+// 排序算法
+let Bubbleresult = bubbleSort([3,5,1,2,4])
+let selectResult = selectSort([3,5,1,2,4,0])
+console.log(selectResult)
+
+
+
+
 
 
 
