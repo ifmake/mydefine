@@ -20,7 +20,7 @@ const Person = (function(){
         // 检测是否被调用
         function _checkClass(instance, constructor){
             if(!(instance instanceof constructor)){
-                throw new Error('不能通过new得到')
+                throw new Error('constructor is no class')
             }
         }
         function Person (fname){

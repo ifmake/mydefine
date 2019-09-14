@@ -62,8 +62,6 @@ const BindRzl = function(){
     }
 }
 
-
-
 export {
     CallRzl,
     ApplayRzl,
