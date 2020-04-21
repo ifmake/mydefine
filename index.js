@@ -82,11 +82,13 @@
 // }, 0)
 // node 环境 timer1 > timer2 > promise1 > promise2
 // 浏览器环境 timer1 > promise1 > timer2 > promise2
-const iterable = [1,2];
-console.log(iterable[Symbol.iterator]())
-const iterator = iterable[Symbol.iterator]()
-iterator.next();
-console.log(iterator.next())
-console.log(iterator.next())
+// const iterable = [1,2];
+// console.log(iterable[Symbol.iterator]())
+// const iterator = iterable[Symbol.iterator]()
+// iterator.next();
+// console.log(iterator.next())
+// console.log(iterator.next())
+
+// promise 
 
 

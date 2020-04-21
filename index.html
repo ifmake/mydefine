@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/index.css">
     <title>自定义模块</title>
-    <script src="./index.js"></script>
-    <!-- <script src="./index.module.js"></script> -->
+    <!-- <script src="./index.js"></script> -->
+    <script type="module" src="./index.module.js?v=123123"></script>
+    <!-- <script src="./module/promise.module.js"></script> -->
 </head>
 <body>
     <!-- <h3>css3 多栏布局</h3>
@@ -28,7 +29,7 @@
     <ul>
         <li>1</li>
         <li>2</li>
-        <li>3</li>
+        <li>32222</li>
     </ul>
 </body>
 <script>
@@ -55,6 +56,42 @@
     const createLi = document.createElement('li');
     createLi.innerHTML = 4;
     ulElement[0].appendChild(createLi);
+
+    // // 红包算法
+    // function randomFrom(Min,Max){
+    //     let Range = Max - Min;
+    //     let Rand = Math.random();
+    //     if(Math.round(Rand * Range)==0) {
+    //         return Min + 1;
+    //     }else if(Math.round(Rand * Max)==Max) {
+    //         return Max - 1;
+    //     }else {
+    //         var num = Min + Math.round(Rand * Range) - 1;
+    //         return num;
+    //     }
+    // }
+
+    // function redPacket(Account, total) {
+    //     const List = [];
+    //     if(Account <=0 || total<=0){
+    //         throw new Error('金额和总数不能为空')
+    //     }
+    //     if(total === 1) {
+    //         List[0] = Account;
+    //         return List;
+    //     }
+    //     let Num = total;
+    //     while(Num > 1) {
+    //         console.log('总数',Account)
+    //         const random = randomFrom(1,Account);
+    //         List.push(random);
+    //         Account -= random;
+    //         -- Num;
+    //     }
+    //     // console.log(List);
+    //     return List;
+    // }
+    // redPacket(20,4);
   
 </script>
 <script>
